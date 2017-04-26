@@ -4,9 +4,6 @@
 include("api.mysql.php");
 include("api.compat.php");
 
-//creating object for db layer
-require_once ($_SERVER['DOCUMENT_ROOT'] . '/modules/engine/api.mysql.php');
-
 /**
  * Registers new non processed transaction
  * 
