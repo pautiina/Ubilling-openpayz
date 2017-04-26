@@ -108,9 +108,9 @@ function simple_query($query) {
 
 //function update single field in table
 function simple_update_field($tablename,$field,$value,$where='') {
-    $tablename=$loginDB->real_escape_string($tablename);
-    $value=$loginDB->real_escape_string($value);
-    $field=$loginDB->real_escape_string($field);
+    $tablename=loginDB_real_escape_string($tablename);
+    $value=loginDB_real_escape_string($value);
+    $field=loginDB_real_escape_string($field);
     $query="UPDATE `".$tablename."` SET `".$field."` = '".$value."' ".$where."";
     nr_query($query);
 }
