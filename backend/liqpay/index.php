@@ -1,6 +1,6 @@
 <?php
 $liqConf=  parse_ini_file('config/liqpay.ini');
-require_once ($_SERVER['DOCUMENT_ROOT'] . '/modules/engine/api.mysql.php');
+require_once ($_SERVER['DOCUMENT_ROOT'] . '/libs/api.mysql.php');
 
 //вытаскиваем из конфига все что нам нужно в будущем
 $ispUrl=$liqConf['TEMPLATE_ISP_URL'];

@@ -69,6 +69,7 @@ if (lq_CheckPost(array('operation_xml', 'signature'))) {
             $hash = $xml_arr['response']['order_id'];
             $customerid = $xml_arr['response']['description'];
             $summ = $xml_arr['response']['amount'];
+			$summ= round($summ*0.9725, 2);						  
             $status = $xml_arr['response']['status'];
             $paysys = 'LIQPAY';
             $note = 'some debug data here';
